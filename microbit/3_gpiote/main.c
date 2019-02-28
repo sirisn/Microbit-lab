@@ -10,8 +10,9 @@ int main() {
 		GPIO->OUTCLR = (1 << i);
 	};
 	gpiote_init();
-	while (1) {
-		toggle_LED();
-	};
+	toggle_LED();
+	while(1){
+		
+	}
 	return 0;
 }
